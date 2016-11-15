@@ -1,7 +1,17 @@
+input::-webkit-input-placeholder{
+	font-size: 20px;
+	line-height: 4;
+}
+
+input[type="text"] {
+    font-size:20px;
+}
+
 input {
 	border: 2px solid #dadada;
 	border-radius: 7px;
 	transition: 1s;
+	padding: 5px 10px;
 }
 
 input:focus {
@@ -13,6 +23,7 @@ input:focus {
 }
 
 textarea {
+	font-size: 20px;
 	border: 2px solid #dadada;
 	border-radius: 7px;
 	transition: 1s;
@@ -26,12 +37,28 @@ textarea:focus {
 	box-shadow: 0 0 10px #9ecaed;
 }
 
+textarea::-webkit-input-placeholder{
+	font-size: 20px;
+	line-height: 1;
+}
+
+.wordsleft{
+	transition: 1s;
+}
+
+.wordsleft:hover{
+	transition: 1s;
+	transform: scale(1.2);
+	border-color: #9ecaed;
+	box-shadow: 0 0 10px #9ecaed;
+}
+
 .button{
 	transition: 1s;
 }
 
 .button:hover {
-	box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+	box-shadow: 0 5px 15px #9ecaed;
 	transform: scale(1.3);
 	transition: 1s;
 }

@@ -15,7 +15,7 @@
 			}
 		</script>
 	</head>
-	<body bgcolor="#4d4d4d">
+	<body bgcolor="#222222">
 		<div class="nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -26,7 +26,7 @@
 
 		<div id="content">
 			<h1>Contact Us</h1>
-			<p>This is the contact us page of our website. Here you can give suggestion or you can give us feedback, register your complaint, ask any question from us and we would get back to you as soon as possible.</p>
+			<p style="width: 80%;"><font size="5px">This is the contact us page of our website. Here you can give suggestion or you can give us feedback, register your complaint, ask any question from us and we would get back to you as soon as possible.</font></p>
 		</div>
 
 		<form name="htmlform" method="post" action="mailto:anubhav16013@iiitd.ac.in">
@@ -72,11 +72,11 @@
 				<td valign="top">
 				<textarea onkeyup="textCounter(this, 'counter',1000);" id="message" rows="10" cols="100" placeholder="Enter you feedback/suggestion/query and we will get back to you as soon as possible"></textarea>
 				</td>
-				<td><input disabled  maxlength="3" size="3" value="1000" id="counter"></td>
+				<td><input disabled  maxlength="3" size="3" value="1000" class="wordsleft" id="counter"><font color="white">Words Left</font></td>
 			</tr>
 			<tr>
 				<td colspan="2" style="text-align:center">
-				<input type="submit" class="button" value="Send Mail" style="margin-left: 6%;">
+				<input type="submit" class="button" value="Send Mail" style="margin-left: 6%;"><label for=""
 				</td>
 			</tr>
 			</table>
