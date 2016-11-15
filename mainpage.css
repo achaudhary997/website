@@ -1,0 +1,165 @@
+#rectangle-shape p { 
+	line-height: 1.8; 
+}
+
+#rectangle-shape .curve { 
+	width: 100%; height: 70%;
+	min-width: 150px;
+	float: left;
+	margin-right:2rem; 
+	-webkit-shape-outside:rectangle();
+	shape-outside:rectangle();
+	transition: 1s;
+}
+
+#rectangle-shape .curve:hover {
+	box-shadow: 0px 0px 25px #ffffff;
+	transition: 1s;
+}
+
+.slideshow{
+	position: relative;
+	max-width: 100%;
+	height: 100%;
+}
+
+.slideshow figure{
+	margin: 0;
+	position: absolute;
+}
+
+
+.slideshow figcaption{
+	position: absolute;
+	top: 0;
+	color: #fff;
+	background: rgba(0,0,0, .3);
+	font-size: 1em;
+	padding: 30px 12px;
+	opacity: 0;
+	transition: opacity .5s;
+	transition: 1s;
+}
+
+.slideshow:hover figure figcaption{
+	transition: opacity .5s;
+	opacity: 1;
+}
+
+.slideshow figure{
+	opacity:0;
+}
+
+ 
+figure:nth-child(1) {
+	animation: xfade 12s 8s infinite;
+	transition: 1s;
+}
+
+
+
+figure:nth-child(2) {
+	animation: xfade 12s 4s infinite;
+	transition: 1s;
+}
+
+
+figure:nth-child(3) {
+	animation: xfade 12s 0s infinite;
+	transition: 1s;
+}
+
+
+@keyframes xfade{
+	0%{
+		opacity: 1;
+	}
+	30% {
+		opacity:1;
+	}
+	33.3%{
+		opacity: 0;
+	}
+	96% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
+
+.nav ul {
+	list-style: none;
+	background-color: #333;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+.nav li {
+
+    display: inline-block;
+    margin-right: -4px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+	line-height: 40px;
+	height: 40px;
+	border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	transition: .3s background-color;
+}
+ 
+.nav a:hover {
+	background-color: #005f5f;
+}
+ 
+.nav a.active {
+	background-color: #fff;
+	color: #444;
+	cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+	.nav li {
+	width: 120px;
+	border-bottom: none;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.4em;
+  }
+
+#footer{
+	background-color: #333;
+	position: fixed;
+	color: white;
+	bottom: 0px;
+	right:0px;
+	left:0px;
+}
+
+table {
+    width: 100%;
+    color: white;
+}
+td {
+    vertical-align: top;
+}
+.d1 {
+    text-align: left;
+}
+.d2 {
+    text-align:center;
+}
+.d3 {
+    text-align:right;
+}
+.copy {
+    visibility: hidden;
+}
+.copy, .d3 {
+    white-space: nowrap;
+}
