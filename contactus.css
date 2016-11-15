@@ -1,3 +1,41 @@
+input {
+	border: 2px solid #dadada;
+	border-radius: 7px;
+	transition: 1s;
+}
+
+input:focus {
+	transition: 1s;
+	transform: scale(1.1);
+	outline: none;
+	border-color: #9ecaed;
+	box-shadow: 0 0 10px #9ecaed;
+}
+
+textarea {
+	border: 2px solid #dadada;
+	border-radius: 7px;
+	transition: 1s;
+}
+
+textarea:focus {
+	transition: 1s;
+	transform: scale(1.05);
+	outline: none;
+	border-color: #9ecaed;
+	box-shadow: 0 0 10px #9ecaed;
+}
+
+.button{
+	transition: 1s;
+}
+
+.button:hover {
+	box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+	transform: scale(1.3);
+	transition: 1s;
+}
+
 .nav ul {
 	list-style: none;
 	background-color: #333;
