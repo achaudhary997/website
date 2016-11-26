@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
 input::-webkit-input-placeholder{
 	font-size: 20px;
 	line-height: 4;
+	font-family: 'Raleway', sans-serif;
 }
 
 input[type="text"] {
     font-size:20px;
+    font-family: 'Raleway', sans-serif;
 }
 
 input {
@@ -24,6 +32,7 @@ input:focus {
 
 textarea {
 	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
 	border: 2px solid #dadada;
 	border-radius: 7px;
 	transition: 1s;
@@ -40,6 +49,7 @@ textarea:focus {
 textarea::-webkit-input-placeholder{
 	font-size: 20px;
 	line-height: 1;
+	font-family: 'Raleway', sans-serif;
 }
 
 .wordsleft{
@@ -98,6 +108,10 @@ textarea::-webkit-input-placeholder{
 	cursor: default;
 }
  
+.nav #active{
+	background-color: #222222;
+}
+
 @media screen and (min-width: 600px) {
 	.nav li {
 	width: 120px;

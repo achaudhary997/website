@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
 #rectangle-shape p { 
 	line-height: 1.8; 
 }
@@ -131,6 +137,14 @@ figure:nth-child(3) {
 	line-height: 50px;
 	font-size: 1.4em;
   }
+
+.nav #active{
+	background-color: #222222;
+}
+
+#content {
+	color: white;
+}
 
 #footer{
 	background-color: #333;
