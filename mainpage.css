@@ -144,6 +144,8 @@ figure:nth-child(3) {
 
 #content {
 	color: white;
+	font-size: 16pt;
+	text-align: center;
 }
 
 #footer{
